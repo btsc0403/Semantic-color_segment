@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Color Visualization</title>
+    <!-- Load local d3.js -->
+    <script src="d3.v4.js"></script>
+</head>
+<body>
+    <!-- Create a div where the graph will take place -->
+    <div id="hueHis"></div>
+    <div id="data" style="visibility: hidden;">1253,550,900,1130,1721,2850,4665,5101,7533,4324,4388,2621,1739,1302,779,600,480,377,84,0,951,27,119,100,114,166,231,107,18,5,341,9,76,145,0,115,77,0,0,0,552,0,0,17,72,121,163,0,148,0,375,64,176,263,112,444,117,348,141,1411</div>
+
+    <!-- Load local hueRing.js -->
+    <script src="hueRing.js"></script>
+
+    <script>
+        // 假定 data 为要处理的数据，您需要根据实际情况提供数据
+        const data = document.getElementById("data").innerHTML;
+        hueHisUpdate(data);
+    </script>
+</body>
+</html>

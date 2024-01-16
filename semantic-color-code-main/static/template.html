@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Color Visualization</title>
+    <!-- Load local d3.js -->
+    <script src="d3.v4.js"></script>
+</head>
+<body>
+    <!-- Create a div where the graph will take place -->
+    <div id="hueHis"></div>
+    <div id="data" style="visibility: hidden;">{{ data }}</div>
+
+    <!-- Load local hueRing.js -->
+    <script src="hueRing.js"></script>
+
+    <script>
+        // 假定 data 为要处理的数据，您需要根据实际情况提供数据
+        const data = document.getElementById("data").innerHTML;
+        hueHisUpdate(data);
+    </script>
+</body>
+</html>
